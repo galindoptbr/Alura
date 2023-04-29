@@ -1,0 +1,111 @@
+/* Color Theme Swatches in Hex */
+.Design-gráfico-1-hex { color: #0389EC; }
+.Design-gráfico-2-hex { color: #CF4B04; }
+.Design-gráfico-3-hex { color: #121212; }
+.Design-gráfico-4-hex { color: #181C1F; }
+.Design-gráfico-5-hex { color: #F417F1; }
+.Design-gráfico-6-hex { color: #09CE2F; }
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+
+
+body {
+  align-items: center;
+  background: linear-gradient(45deg,  #121212 0%, #181C1F 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
+}
+
+.teclado {
+  background: linear-gradient(to bottom, #121212 0%, #181C1F 100%);
+  border-radius: 30px;
+  box-shadow: 5px 5px 0 #09CE2F;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px;
+}
+
+.tecla1 {
+  border: 1px solid rgba(255, 255, 255, 0.103);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 #0389EC;
+  color: white;
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.tecla2 {
+  border: 1px solid rgba(255, 255, 255, 0.103);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 #CF4B04;
+  color: white;
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.tecla3 {
+  border: 1px solid rgba(255, 255, 255, 0.103);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 #F417F1;
+  color: white;
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.tecla1.ativa,
+.tecla1:active {
+  background-color: #0389EC;
+  color: #121212;
+  outline: none;
+}
+
+.tecla2.ativa,
+.tecla2:active {
+  background-color: #CF4B04;
+  color: #121212;
+  outline: none;
+}
+
+.tecla3.ativa,
+.tecla3:active {
+  background-color: #F417F1;
+  color: #121212;
+  outline: none;
+}
+
+.tecla1.focus,
+.tecla1:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px #0389EC;
+}
+
+.tecla2.focus,
+.tecla2:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px #CF4B04;
+}
+
+.tecla3.focus,
+.tecla3:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px #F417F1;
+}
