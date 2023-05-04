@@ -29,7 +29,7 @@ body {
   padding: 30px;
 }
 
-.tecla1 {
+#tecla1 {
   border: 1px solid rgba(255, 255, 255, 0.103);
   border-radius: 30px;
   box-shadow: 3px 3px 0 #0389EC;
@@ -43,7 +43,7 @@ body {
   width: 120px;
 }
 
-.tecla2 {
+#tecla2 {
   border: 1px solid rgba(255, 255, 255, 0.103);
   border-radius: 30px;
   box-shadow: 3px 3px 0 #CF4B04;
@@ -57,7 +57,7 @@ body {
   width: 120px;
 }
 
-.tecla3 {
+#tecla3 {
   border: 1px solid rgba(255, 255, 255, 0.103);
   border-radius: 30px;
   box-shadow: 3px 3px 0 #F417F1;
@@ -71,41 +71,41 @@ body {
   width: 120px;
 }
 
-.tecla1.ativa,
-.tecla1:active {
+#tecla1.ativa,
+#tecla1:active {
   background-color: #0389EC;
   color: #121212;
   outline: none;
 }
 
-.tecla2.ativa,
-.tecla2:active {
+#tecla2.ativa,
+#tecla2:active {
   background-color: #CF4B04;
   color: #121212;
   outline: none;
 }
 
-.tecla3.ativa,
-.tecla3:active {
+#tecla3.ativa,
+#tecla3:active {
   background-color: #F417F1;
   color: #121212;
   outline: none;
 }
 
-.tecla1.focus,
-.tecla1:focus {
+#tecla1.focus,
+#tecla1:focus {
   outline: none;
   box-shadow: 1px 1px 10px #0389EC;
 }
 
-.tecla2.focus,
-.tecla2:focus {
+#tecla2.focus,
+#tecla2:focus {
   outline: none;
   box-shadow: 1px 1px 10px #CF4B04;
 }
 
-.tecla3.focus,
-.tecla3:focus {
+#tecla3.focus,
+#tecla3:focus {
   outline: none;
   box-shadow: 1px 1px 10px #F417F1;
 }
