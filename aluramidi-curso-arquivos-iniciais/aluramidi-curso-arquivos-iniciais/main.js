@@ -1,6 +1,14 @@
 
-function tocaSom (idElementAudio) {
-    document.querySelector(idElementAudio).play();
+function tocaSom (selectorAudio) {
+
+    const element = document.querySelector(selectorAudio).play();
+
+    if (element && element.localName === 'audio') {
+        element.play();
+    } 
+    else {
+        console.log('Elemento nao encontrado ou seletor nao encontrado')
+    }
     
 }
 
