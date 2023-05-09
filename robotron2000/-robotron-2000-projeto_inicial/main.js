@@ -42,8 +42,8 @@ botoes.forEach( (element) => {
        let operacao = event.target.dataset.controle;
        manipulaDados(operacao, controle);
        
-
        atualiza();
+       mudaRobo();
    })
 
 });
@@ -59,6 +59,9 @@ function manipulaDados(operacao, controle){
 
 
 
+
+
+
 function atualiza(){
    //utilizei as variáveis para transformar em int as estatisticas
    var forca = 0;
@@ -66,8 +69,8 @@ function atualiza(){
    var energia = 0;
    var velocidade = 0;
 
-   
-   
+
+
 
 
    pontos.forEach((elemento) => {
@@ -92,6 +95,26 @@ function atualiza(){
 }
 
 
+function mudaRobo() {
+    var forcaTotal = 0;
+    pontos.forEach((elemento) => {
+        var contador = parseInt(elemento.value);
+        var nomeComponente = elemento.dataset.contador;
+        forcaTotal += pecas[nomeComponente].forca * contador;
+    });
+
+    var imagem = document.querySelector('.robo');
+    if (forcaTotal > 300) {
+        imagem.src = 'img/robotron-4.png';
+    } else if (forcaTotal > 200) {
+        imagem.src = 'img/robotron-3.png';
+    } else if (forcaTotal > 100) {
+        imagem.src = 'img/robotron-2.png';
+    } else {
+        imagem.src = 'img/robotron.png';
+    }
+
+}
 
 
 
