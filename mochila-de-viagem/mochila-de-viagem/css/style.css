@@ -1,0 +1,94 @@
+html {
+    background: #3D3D3D;
+    height: 100%;
+    font-family: 'Roboto', cursive;
+}
+
+.conteudo {
+    padding: 10vh 3em 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.principal {
+    flex-grow: 1;
+    flex-basis: auto;
+    min-width: 600px;
+    padding: 4em 2em 2em;
+    box-sizing: border-box;
+    display: flex;
+    background: #596A74;
+    border-radius: 10px;
+    gap: 2em;
+}
+  
+.mochila img {
+    width: 250px;
+    margin-left: -40px;
+    margin-bottom: 20px;
+}
+  
+
+
+.adicionar {
+    width: 100%;
+}
+
+.adicionar input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.5em 0 1em;
+    padding: 1em 0.5em;
+    border-radius: 10px;
+    border: 2px solid #F0B53F;
+}
+
+.adicionar label {
+    display: block;
+}
+
+.cadastrar {
+    background-color: #E0594C;
+    color: #3D3D3D;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+
+.lista {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    list-style: none;
+    padding: 0.6em 2em;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 0 0 1em;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 20px;
+}
+
+.item strong {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    Background: #F0B53F;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+label {
+    color: white;
+}
+
