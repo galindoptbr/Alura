@@ -2,7 +2,10 @@ function verificaChute(chute) {
     const numero = +chute
 
     if (chuteForInvalido(numero)) {
-        elementoChute.innerHTML += '<div>Valor invalido burro</div>'
+        elementoChute.innerHTML += `
+        <div>[ERRO] Valor invalido!</div>
+        <div>Voce deve falar apenas numeros a partir de agora</div>
+        `
         return
     }
 
