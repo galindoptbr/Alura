@@ -1,4 +1,4 @@
-async function buscarendereco(cep) {
+async function buscarEndereco(cep) {
     var mensagemErro = document.querySelector('#erro');
     mensagemErro.innerHTML = '';
     try {
@@ -27,4 +27,4 @@ async function buscarendereco(cep) {
 }
 
 var cep = document.querySelector('#cep');
-cep.addEventListener('focusout', () => buscarendereco(cep.value));
+cep.addEventListener('focusout', () => buscarEndereco(cep.value));
