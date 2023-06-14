@@ -1,6 +1,6 @@
 import Banner from './components/Banner';
 import Formulario from './components/Formulario';
-import ListaSuspensa from './components/ListaSuspensa';
+import Botao from './components/Botao';
 
 function App() {
   return (
