@@ -3,8 +3,6 @@ import "./CampoTexto.css";
 
 const CampoTexto = (props) => {
 
-  // let valor = ''
-
   const [valor, setValue] = useState('')
 
   const aoDigited = (event) => {
