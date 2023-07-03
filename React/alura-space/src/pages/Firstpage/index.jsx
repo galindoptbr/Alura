@@ -1,5 +1,11 @@
+import Header from "../../components/Header";
+import Menu from "../../components/Menu";
+
 export default function FirstPage() {
-    return (
-        <h1>Main page</h1>
-    )
+  return (
+    <>
+      <Header />
+      <Menu />
+    </>
+  );
 }
